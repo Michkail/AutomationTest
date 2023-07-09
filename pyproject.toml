@@ -8,6 +8,7 @@ packages = [{include = "automation_test"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+appium-python-client = "^2.11.1"
 
 
 [build-system]
