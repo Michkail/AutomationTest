@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.11 on darwin)" generated="20230714 13:47:24.850" rpa="false" schemaversion="4">
+<suite id="s1" name="Dashboard Test" source="/Users/macbook/Documents/ProjSAT/AutomationTest/automation_test/dashboard_test.robot">
+<test id="s1-t1" name="Login Test" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://100.78.11.44:3000/auth</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230714 13:47:25.151" level="INFO">Opening browser 'chrome' to base url 'http://100.78.11.44:3000/auth'.</msg>
+<status status="PASS" starttime="20230714 13:47:25.150" endtime="20230714 13:47:33.256"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username-form</arg>
+<arg>desktop19</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 13:47:33.258" level="INFO">Typing text 'desktop19' into text field 'username-form'.</msg>
+<status status="PASS" starttime="20230714 13:47:33.257" endtime="20230714 13:47:33.553"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password-form</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 13:47:33.553" level="INFO">Typing text '123' into text field 'password-form'.</msg>
+<status status="PASS" starttime="20230714 13:47:33.553" endtime="20230714 13:47:33.649"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 13:47:33.650" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230714 13:47:33.650" endtime="20230714 13:47:33.754"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 13:47:33.754" endtime="20230714 13:47:33.905"/>
+</kw>
+<status status="PASS" starttime="20230714 13:47:25.150" endtime="20230714 13:47:33.906"/>
+</test>
+<test id="s1-t2" name="Dashboard Test" line="16">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://100.78.11.44:3000/auth</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230714 13:47:33.910" level="INFO">Opening browser 'chrome' to base url 'http://100.78.11.44:3000/auth'.</msg>
+<status status="PASS" starttime="20230714 13:47:33.909" endtime="20230714 13:47:38.090"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username-form</arg>
+<arg>desktop19</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 13:47:38.092" level="INFO">Typing text 'desktop19' into text field 'username-form'.</msg>
+<status status="PASS" starttime="20230714 13:47:38.091" endtime="20230714 13:47:38.395"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password-form</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 13:47:38.396" level="INFO">Typing text '123' into text field 'password-form'.</msg>
+<status status="PASS" starttime="20230714 13:47:38.395" endtime="20230714 13:47:38.483"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 13:47:38.485" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230714 13:47:38.484" endtime="20230714 13:47:38.590"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Ok</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 13:47:38.590" level="INFO">Clicking button 'Ok'.</msg>
+<msg timestamp="20230714 13:47:38.960" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230714 13:47:38.960" level="FAIL">Button with locator 'Ok' not found.</msg>
+<status status="FAIL" starttime="20230714 13:47:38.590" endtime="20230714 13:47:38.965"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230714 13:47:38.965" endtime="20230714 13:47:38.965"/>
+</kw>
+<status status="FAIL" starttime="20230714 13:47:33.907" endtime="20230714 13:47:38.965">Button with locator 'Ok' not found.</status>
+</test>
+<status status="FAIL" starttime="20230714 13:47:24.851" endtime="20230714 13:47:38.966"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Dashboard Test">Dashboard Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
